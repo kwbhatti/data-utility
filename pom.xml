@@ -5,6 +5,7 @@
 	<version>0.0.1</version>
 	<name>io.github.kwbhatti:data-utility</name>
 	<description>Description</description>
+	<url>https://github.com/kwbhatti/data-utility</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
