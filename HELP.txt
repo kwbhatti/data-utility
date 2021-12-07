@@ -1,2 +1,4 @@
 gpg -ab data-utility-0.0.1-SNAPSHOT.jar
 gpg --verify data-utility-0.0.1-SNAPSHOT.jar
+mvn nexus-staging:release
+mvn nexus-staging:drop
