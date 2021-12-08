@@ -3,6 +3,11 @@ package io.github.kwbhatti;
 import io.github.kwbhatti.compare.Compare;
 import io.github.kwbhatti.convert.*;
 
+/**
+ * 
+ * @author kbhatti
+ *
+ */
 public class Data {
 	
 	private Object value = null;
@@ -36,5 +41,6 @@ public class Data {
 		String valStr = null;
 		String value = null;
 		System.out.println(new Data(valStr).compare(value).withDataType());
+		System.out.println(new Data(null).compare(null).dataTypes());
 	}
 }

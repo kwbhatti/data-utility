@@ -1,10 +1,12 @@
 package io.github.kwbhatti.compare;
 
 /**
+ * 
  * This class can compare two given values. 
  * If values are all that matter it can ignore the data type
  * and convert the two values to strings and compare the two strings.
- * @author tojala
+ * @author kbhatti
+ *
  */
 public class Compare {
 	
@@ -70,7 +72,13 @@ public class Compare {
 		return withDataType();
 	}
 	
+	/**
+	 * Compares data types
+	 * @return true / false
+	 */
 	public boolean dataTypes() {
+		if (areBothValuesNull()) return true;
+		else if (isEitherValueNull()) return false;
 		return areBothValuesOfSameDataType();
 	}
 }
