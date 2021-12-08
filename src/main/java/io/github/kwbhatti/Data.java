@@ -1,5 +1,6 @@
 package io.github.kwbhatti;
 
+import io.github.kwbhatti.compare.Compare;
 import io.github.kwbhatti.convert.*;
 
 public class Data {
@@ -11,10 +12,9 @@ public class Data {
 		this.value = value;
 	}
 	
-	public boolean compareTo(Object value, boolean compareDatatypes) {
+	public Compare compare(Object value) {
 		this.compareValue = value;
-		if (compareDatatypes) return new Compare(this.value, compareValue).compareWithDataType();
-		return new Compare(this.value, compareValue).compareWithoutDataType();
+		return new Compare(this.value, this.compareValue);
 	}
 	
 	public ConvertInterface convert() {
@@ -29,12 +29,12 @@ public class Data {
 	}
 		
 	public static void main(String[] args) {
-		System.out.println(new Data(2.2).compareTo("2.2", true));
+		System.out.println(new Data(2.2).compare("2.2").withoutDataType());
 		new Data(498).convert().toString();
 		boolean g = true;
 		System.out.println(new Data(g).convert().toString());
 		String valStr = null;
 		String value = null;
-		System.out.println(new Data(valStr).compareTo(value, true));
+		System.out.println(new Data(valStr).compare(value).withDataType());
 	}
 }

@@ -3,7 +3,7 @@
 <suite name="Test Suite" verbose="1" thread-count="1" >
   	<test name="Test" >
 	    <classes>
-	      	<class name="io.github.kwbhatti.examples.SampleTest"/>
+	      	<class name="io.github.kwbhatti.DataTest"/>
 	    </classes>
   	</test>
 </suite>

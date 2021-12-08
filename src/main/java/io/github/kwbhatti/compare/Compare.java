@@ -1,4 +1,4 @@
-package io.github.kwbhatti;
+package io.github.kwbhatti.compare;
 
 /**
  * This class can compare two given values. 
@@ -6,7 +6,7 @@ package io.github.kwbhatti;
  * and convert the two values to strings and compare the two strings.
  * @author tojala
  */
-class Compare {
+public class Compare {
 	
 	private Object value1 = null;
 	private Object value2 = null;
@@ -53,7 +53,7 @@ class Compare {
 	 * if they are then it will compare the values.
 	 * @return true / false
 	 */
-	boolean compareWithDataType() { 
+	public boolean withDataType() { 
 		if (areBothValuesNull()) return true;
 		else if (isEitherValueNull()) return false;
 		else if (areBothValuesOfSameDataType()) return value1.equals(value2);
@@ -65,8 +65,12 @@ class Compare {
 	 * It will then compare the values of the strings and return the result.
 	 * @return true / false
 	 */
-	boolean compareWithoutDataType() {
+	public boolean withoutDataType() {
 		convertValuesToString();
-		return compareWithDataType();
+		return withDataType();
+	}
+	
+	public boolean dataTypes() {
+		return areBothValuesOfSameDataType();
 	}
 }
