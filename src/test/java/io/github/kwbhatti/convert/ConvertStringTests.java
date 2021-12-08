@@ -1,4 +1,4 @@
-package io.github.kwbhatti.dataConversionTests;
+package io.github.kwbhatti.convert;
 
 import org.testng.Assert;
 import org.testng.annotations.Ignore;
@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import io.github.kwbhatti.Data;
 
-public class ConvertString implements ConversionTests {
+public class ConvertStringTests implements ConvertTests {
 
 	@Override
 	@Test

@@ -1,6 +1,6 @@
-package io.github.kwbhatti.dataConversionTests;
+package io.github.kwbhatti.convert;
 
-public interface ConversionTests {
+public interface ConvertTests {
 
 	void convertToBoolean();
 	
