@@ -5,7 +5,7 @@ public class ConvertFloat implements ConvertInterface {
 	Float value = null;
 	
 	public ConvertFloat(float value) {
-		this.value = new Float(value);
+		this.value = Float.valueOf(value);
 	}
 
 	@Override

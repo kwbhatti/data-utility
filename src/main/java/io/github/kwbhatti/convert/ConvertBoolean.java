@@ -5,7 +5,7 @@ public class ConvertBoolean implements ConvertInterface {
 	Boolean value = null;
 	
 	public ConvertBoolean(boolean value) {
-		this.value = new Boolean(value);
+		this.value = Boolean.valueOf(value);
 	}
 
 	@Override

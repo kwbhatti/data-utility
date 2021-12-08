@@ -5,7 +5,7 @@ public class ConvertInteger implements ConvertInterface {
 	Integer value = null;
 	
 	public ConvertInteger(int value) {
-		this.value = new Integer(value);
+		this.value = Integer.valueOf(value);
 	}
 
 	@Override

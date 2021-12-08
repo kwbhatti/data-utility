@@ -5,7 +5,7 @@ public class ConvertLong implements ConvertInterface {
 	Long value = null;
 	
 	public ConvertLong(long value) {
-		this.value = new Long(value);
+		this.value = Long.valueOf(value);
 	}
 
 	@Override

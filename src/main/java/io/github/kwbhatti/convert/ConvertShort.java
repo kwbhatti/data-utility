@@ -5,7 +5,7 @@ public class ConvertShort implements ConvertInterface {
 	Short value = null;
 	
 	public ConvertShort(short value) {
-		this.value = new Short(value);
+		this.value = Short.valueOf(value);
 	}
 
 	@Override
