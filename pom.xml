@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.kwbhatti</groupId>
 	<artifactId>data-utility</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<name>io.github.kwbhatti:data-utility</name>
 	<description>Description</description>
 	<url>https://github.com/kwbhatti/data-utility</url>
