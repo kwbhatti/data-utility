@@ -1,13 +1,24 @@
 gpg -ab data-utility-0.0.1-SNAPSHOT.jar
 gpg --verify data-utility-0.0.1-SNAPSHOT.jar
+
 mvn nexus-staging:release
 mvn nexus-staging:drop
 
-will not execute the test (only package)
-mvn clean install
 
-will run the tests but will not create asc files for publishing
-mvn -Pcore -Ptest -DtestngFile=testng.xml clean install
+mvn -DtestngFile=testng.xml clean install
+	-will run the tests
+	-will not create java docs
+	-will not run gpg
+	-will not deploy
 
-will run the test and generate asc files for publishing
-mvn -Pcore -Ptest -Ppublish -DtestngFile=testng.xml clean install
+mvn -Pcore -Pdoc -Pmaven-deploy -DtestngFile=testng.xml clean deploy
+	-will run the tests
+	-will create java docs
+	-will run gpg
+	-will deploy to maven
+
+mvn -Pcore -Pdoc -Pgithub-deploy -DtestngFile=testng.xml clean deploy
+	-will run the tests
+	-will create java docs
+	-will run gpg
+	-will deploy to github

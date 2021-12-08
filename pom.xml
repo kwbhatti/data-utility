@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.kwbhatti</groupId>
 	<artifactId>data-utility</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>io.github.kwbhatti:data-utility</name>
 	<description>Description</description>
 	<url>https://github.com/kwbhatti/data-utility</url>
@@ -34,16 +34,6 @@
 		<developerConnection>scm:git:ssh://github.com:kwbhatti/data-utility.git</developerConnection>
 		<url>https://github.com/kwbhatti/data-utility.git/tree/master</url>
 	</scm>
-	<distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -68,13 +58,6 @@
 							<target>${java.version}</target>
 						</configuration>
 					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>test</id>
-			<build>
-				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
@@ -90,7 +73,7 @@
 			</build>
 		</profile>
 		<profile>
-			<id>publish</id>
+			<id>doc</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -122,19 +105,8 @@
 				                </configuration>
 							</execution>
 						</executions>
-				    </plugin>		    	
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId>
-						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>${nexus.staging.maven.plugin}</version>
-						<extensions>true</extensions>
-						<configuration>
-							<serverId>ossrh</serverId>
-							<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-							<autoReleaseAfterClose>false</autoReleaseAfterClose>
-						</configuration>
-					</plugin>
-					<plugin>
+				    </plugin>
+				    <plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
 						<version>${maven.gpg.plugin}</version>
@@ -150,6 +122,44 @@
 					</plugin>
 				</plugins>
 			</build>
+		</profile>
+		<profile>
+			<id>maven-deploy</id>
+			<distributionManagement>
+		        <snapshotRepository>
+		            <id>ossrh</id>
+		            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+		        </snapshotRepository>
+		        <repository>
+		            <id>ossrh</id>
+		            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		        </repository>
+		    </distributionManagement>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>${nexus.staging.maven.plugin}</version>
+						<extensions>true</extensions>
+						<configuration>
+							<serverId>ossrh</serverId>
+							<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>false</autoReleaseAfterClose>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>github-deploy</id>
+			<distributionManagement>
+				<repository>
+					<id>github</id>
+					<name>discoveryinc-cs</name>
+					<url>https://maven.pkg.github.com/kwbhatti/data-utility</url>
+				</repository>
+			</distributionManagement>
 		</profile>
 	</profiles>
 </project>
