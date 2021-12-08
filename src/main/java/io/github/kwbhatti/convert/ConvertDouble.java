@@ -5,7 +5,7 @@ public class ConvertDouble implements ConvertInterface {
 	Double value = null;
 	
 	public ConvertDouble(double value) {
-		this.value = new Double(value);
+		this.value = Double.valueOf(value);
 	}
 
 	@Override
