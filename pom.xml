@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>io.github.kwbhatti</groupId>
+	<groupId>com.chimp-central</groupId>
 	<artifactId>data-utility</artifactId>
 	<version>1.0.1</version>
-	<name>io.github.kwbhatti:data-utility</name>
-	<description>Description</description>
+	<name>Data Utility com.chimp-central:data-utility</name>
+	<description>Compare and Convert Data</description>
 	<url>https://github.com/kwbhatti/data-utility</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,7 +26,7 @@
 	<developers>
 		<developer>
 			<name>Khurram Bhatti</name>
-			<email>khurram.waleed.bhatti@gmail.com</email>
+			<email>test-monkey@chimp-central.com</email>
 		</developer>
 	</developers>
 	<scm>
@@ -156,7 +156,6 @@
 			<distributionManagement>
 				<repository>
 					<id>github</id>
-					<name>discoveryinc-cs</name>
 					<url>https://maven.pkg.github.com/kwbhatti/data-utility</url>
 				</repository>
 			</distributionManagement>

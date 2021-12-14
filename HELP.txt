@@ -22,3 +22,5 @@ mvn -Pcore -Pdoc -Pgithub-deploy -DtestngFile=testng.xml clean deploy
 	-will create java docs
 	-will run gpg
 	-will deploy to github
+
+	
