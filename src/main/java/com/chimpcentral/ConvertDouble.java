@@ -1,6 +1,6 @@
-package io.github.kwbhatti.convert;
+package com.chimpcentral;
 
-public class ConvertDouble implements ConvertInterface {
+class ConvertDouble implements ConvertInterface {
 	
 	Double value = null;
 	

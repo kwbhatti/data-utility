@@ -1,6 +1,6 @@
-package io.github.kwbhatti.convert;
+package com.chimpcentral;
 
-public class ConvertString implements ConvertInterface {
+class ConvertString implements ConvertInterface {
 	
 	String value = null;
 	

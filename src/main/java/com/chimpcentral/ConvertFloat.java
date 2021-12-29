@@ -1,6 +1,6 @@
-package io.github.kwbhatti.convert;
+package com.chimpcentral;
 
-public class ConvertFloat implements ConvertInterface {
+class ConvertFloat implements ConvertInterface {
 	
 	Float value = null;
 	

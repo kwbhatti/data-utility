@@ -1,4 +1,4 @@
-package io.github.kwbhatti.compare;
+package com.chimpcentral;
 
 /**
  * 
@@ -8,7 +8,7 @@ package io.github.kwbhatti.compare;
  * @author kbhatti
  *
  */
-public class Compare {
+class Compare {
 	
 	private Object value1 = null;
 	private Object value2 = null;

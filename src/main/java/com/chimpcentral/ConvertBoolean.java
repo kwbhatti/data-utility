@@ -1,6 +1,6 @@
-package io.github.kwbhatti.convert;
+package com.chimpcentral;
 
-public class ConvertBoolean implements ConvertInterface {
+class ConvertBoolean implements ConvertInterface {
 	
 	Boolean value = null;
 	

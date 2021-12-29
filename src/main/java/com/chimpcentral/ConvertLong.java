@@ -1,6 +1,6 @@
-package io.github.kwbhatti.convert;
+package com.chimpcentral;
 
-public class ConvertLong implements ConvertInterface {
+class ConvertLong implements ConvertInterface {
 	
 	Long value = null;
 	

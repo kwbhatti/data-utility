@@ -64,7 +64,7 @@
 						<version>${surefire.plugin.version}</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testngFiles/${testngFile}</suiteXmlFile>
+								<suiteXmlFile>testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 							<groups>${groups}</groups>
 						</configuration>

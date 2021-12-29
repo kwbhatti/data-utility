@@ -1,6 +1,6 @@
-package io.github.kwbhatti.convert;
+package com.chimpcentral;
 
-public class ConvertShort implements ConvertInterface {
+class ConvertShort implements ConvertInterface {
 	
 	Short value = null;
 	

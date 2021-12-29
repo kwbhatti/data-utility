@@ -1,4 +1,4 @@
-package io.github.kwbhatti.convert;
+package com.chimpcentral;
 
 public interface ConvertInterface {
 

@@ -1,7 +1,4 @@
-package io.github.kwbhatti;
-
-import io.github.kwbhatti.compare.Compare;
-import io.github.kwbhatti.convert.*;
+package com.chimpcentral;
 
 /**
  * 

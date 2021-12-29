@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-import io.github.kwbhatti.Data;
+import com.chimpcentral.Data;
 
 public class ConvertStringTests implements ConvertTests {
 
