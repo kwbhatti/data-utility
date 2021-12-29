@@ -3,7 +3,7 @@
 <suite name="Test Suite" verbose="1" thread-count="1" >
   	<test name="Test" >
 	    <classes>
-	      	<class name="io.github.kwbhatti.convert.ConvertStringTests"/>
+	      	<class name="io.github.kwbhatti.ConvertStringTests"/>
 	    </classes>
   	</test>
 </suite>
