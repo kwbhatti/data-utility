@@ -3,9 +3,9 @@
 	<groupId>com.chimp-central</groupId>
 	<artifactId>data-utility</artifactId>
 	<version>1.0.1</version>
-	<name>Data Utility com.chimp-central:data-utility</name>
-	<description>Compare and Convert Data</description>
-	<url>https://github.com/kwbhatti/data-utility</url>
+	<name>Data Utility</name>
+	<description>Compare and Convert Data (Primitives and Strings)</description>
+	<url>https://chimp-central.com/</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
